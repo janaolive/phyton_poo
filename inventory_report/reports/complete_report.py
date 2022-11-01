@@ -19,7 +19,7 @@ class CompleteReport(SimpleReport):
         company = company_with_more_products(company_and_products)
         products_by_company = [
             f"- {empresa}: {quantidade}\n"
-            for empresa, quantidade in company_and_products.items()            
+            for empresa, quantidade in company_and_products.items()
         ]
         response = "".join(products_by_company)
         return (
