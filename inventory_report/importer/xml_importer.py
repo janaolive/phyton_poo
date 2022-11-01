@@ -10,5 +10,7 @@ class XmlImporter(Importer):
         with open(path) as file:
             line_content = file.read()
             content = [
-                item for item in xmltodict.parse(line_content)["dataset"]["record"]
+                item for item in xmltodict.parse(
+                    line_content)["dataset"]["record"]
+            ]
             return content
